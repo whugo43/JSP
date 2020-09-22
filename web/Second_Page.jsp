@@ -21,6 +21,7 @@ Integer result= Integer.parseInt(number1)+Integer.parseInt(number2);
     </head>
     <body>
         <h1>Calculadora</h1>
+        <h1>Resultado de la div</h1>
         <h1>Resultado de la suma</h1>
         <%= number1 %><br>
         <%= number2 %><br>

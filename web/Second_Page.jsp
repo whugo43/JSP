@@ -9,9 +9,10 @@
  // Este es un scriptlet
  // Es código en Java que captura los parámetros enviados
  // en el objeto "request"
- String number1 = request.getParameter("number1");
- String number2 = request.getParameter("number2");
-Integer result= Integer.parseInt(number1)+Integer.parseInt(number2); 
+ String codigo1 = request.getParameter("codigo1");
+ String codigo2 = request.getParameter("codigo2");
+ String resultado="001001"+ codigo1;
+Integer result= Integer.parseInt(codigo1)+Integer.parseInt(codigo2); 
 %>
 <!DOCTYPE html>
 <html>
@@ -21,12 +22,12 @@ Integer result= Integer.parseInt(number1)+Integer.parseInt(number2);
     </head>
     <body>
         <h1>Calculadora</h1>
-        <h1>Resultado de la div</h1>
+        
         <h1>Resultado de la suma</h1>
-        <h1>Resultado de la resta</h1>
-        <%= number1 %><br>
-        <%= number2 %><br>
-        <%= result %><br>
+        <%= resultado %><br>
+        <%= codigo1 %><br>
+        <%= codigo2 %><br>
+        <p>Resultado de la suma <%= result %></p>
         
     </body>
 </html>
